@@ -1,5 +1,34 @@
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
+    // 汉堡菜单交互
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    
+    // 切换菜单显示
+    function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    }
+    
+    // 点击汉堡按钮
+    menuToggle.addEventListener('click', toggleMenu);
+    
+    // 点击遮罩关闭菜单
+    menuOverlay.addEventListener('click', toggleMenu);
+    
+    // 点击菜单项关闭菜单
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (nav.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+    
     // 确保颜色方块样式正确
     document.querySelectorAll('.color-box').forEach(box => {
         box.style.width = '20px';
