@@ -6,6 +6,146 @@
     <title>Metallix (MTX) - The Future of Zambian Mining Investment</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* License Section Styles */
+        .license-section {
+            margin: 40px 0;
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .license-section h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        
+        .license-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .license-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .license-info h4 {
+            color: #1a5276;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .license-info ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .license-info ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .license-info ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1a5276;
+        }
+        
+        .license-image-container {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .license-image {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        
+        .license-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .license-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .license-image:hover .license-img {
+            transform: scale(1.05);
+        }
+        
+        .license-image:hover .license-overlay {
+            opacity: 1;
+        }
+        
+        /* Modal Styles */
+        .license-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            overflow: auto;
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            padding: 20px;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .license-container {
+                flex-direction: column;
+            }
+            
+            .license-image {
+                width: 200px;
+                height: 280px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -90,6 +230,32 @@
                     <p>By holding MTX tokens, investors can participate in the early stages of Zambian mining development and share in future mining development returns. We plan to complete the exploration funding within 12 months, complete the mine exploration within 6 months after funding, and then proceed with commercial operations over the next 6-12 months.</p>
                 </div>
             </div>
+            
+            <div class="license-section">
+                <h3>Official Mining License</h3>
+                <div class="license-container">
+                    <div class="license-info">
+                        <h4>Large Scale Exploration License</h4>
+                        <ul>
+                            <li><strong>License Number:</strong> 38203-HQ-LEL</li>
+                            <li><strong>Holder:</strong> Wushuang Mining Company Limited</li>
+                            <li><strong>Minerals:</strong> Copper, Iron Ore, Cobalt, Silver, Zinc, Gold, and Nickel</li>
+                            <li><strong>Duration:</strong> 4 years (from November 18, 2024)</li>
+                            <li><strong>Issued By:</strong> Republic of Zambia</li>
+                        </ul>
+                        <p>This official license authorizes our company to conduct mineral exploration activities in Zambia's Copperbelt region, laying the legal foundation for future commercial mining operations.</p>
+                    </div>
+                    <div class="license-image-container">
+                        <div class="license-image">
+                            <img src="licence.jpg" alt="Mining License" class="license-img">
+                            <div class="license-overlay">
+                                <span><i class="fas fa-search-plus"></i> Click to enlarge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="map-container">
                 <h3>Mine Location</h3>
                 <div class="map-placeholder">
@@ -122,7 +288,7 @@
                     </div>
                     <div class="token-detail">
                         <h3>Total Supply</h3>
-                        <p>10,000,000 MTX</p>
+                        <p>100,000,000 MTX</p>
                     </div>
                     <div class="token-detail">
                         <h3>Contract Address</h3>
@@ -137,23 +303,23 @@
                     <div class="distribution-details">
                         <div class="distribution-item">
                             <span class="color-box team" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
-                            <p>Development Team: 30% (3,000,000 MTX)</p>
+                            <p>Development Team: 30% (30,000,000 MTX)</p>
                         </div>
                         <div class="distribution-item">
                             <span class="color-box market" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
-                            <p>Market Circulation: 30% (3,000,000 MTX)</p>
+                            <p>Market Circulation: 30% (30,000,000 MTX)</p>
                         </div>
                         <div class="distribution-item">
                             <span class="color-box community" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
-                            <p>Community & Incentives: 20% (2,000,000 MTX)</p>
+                            <p>Community & Incentives: 20% (20,000,000 MTX)</p>
                         </div>
                         <div class="distribution-item">
                             <span class="color-box marketing" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
-                            <p>Marketing Operations: 15% (1,500,000 MTX)</p>
+                            <p>Marketing Operations: 15% (15,000,000 MTX)</p>
                         </div>
                         <div class="distribution-item">
                             <span class="color-box reserve" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
-                            <p>Mining Reserve: 5% (500,000 MTX)</p>
+                            <p>Mining Reserve: 5% (5,000,000 MTX)</p>
                         </div>
                     </div>
                     <div class="token-trade">
@@ -207,18 +373,19 @@
             </div>
             <div class="roadmap-timeline">
                 <div class="roadmap-item">
-                    <div class="roadmap-date">2025 Q2</div>
+                    <div class="roadmap-date">2024 Q4</div>
                     <div class="roadmap-content">
                         <h3>Project Launch</h3>
                         <ul>
                             <li>Project concept design</li>
                             <li>Team formation</li>
                             <li>Acquisition of mining licenses</li>
+                            <li>Completion of preliminary exploration</li>
                         </ul>
                     </div>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-date">2025 Q3</div>
+                    <div class="roadmap-date">2025 Q1</div>
                     <div class="roadmap-content">
                         <h3>Token Issuance</h3>
                         <ul>
@@ -226,39 +393,43 @@
                             <li>Official website launch</li>
                             <li>Whitepaper release</li>
                             <li>Community building</li>
+                            <li>Begin presale</li>
                         </ul>
                     </div>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-date">2025 Q4</div>
+                    <div class="roadmap-date">2025 Q2</div>
                     <div class="roadmap-content">
-                        <h3>Fundraising</h3>
+                        <h3>Growth Phase</h3>
                         <ul>
-                            <li>Token presale</li>
-                            <li>Listing on decentralized exchanges</li>
-                            <li>Begin mine exploration preparations</li>
+                            <li>Complete token presale</li>
+                            <li>List on decentralized exchanges</li>
+                            <li>Launch staking mechanism</li>
+                            <li>Begin mine exploration</li>
                         </ul>
                     </div>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-date">2026 Q1</div>
+                    <div class="roadmap-date">2025 Q3-Q4</div>
                     <div class="roadmap-content">
-                        <h3>Mine Exploration</h3>
+                        <h3>Maturity Phase</h3>
                         <ul>
                             <li>Complete mine exploration</li>
                             <li>Release exploration report</li>
                             <li>Develop commercial development plan</li>
+                            <li>Launch revenue distribution mechanism</li>
                         </ul>
                     </div>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-date">2026 Q2-Q3</div>
+                    <div class="roadmap-date">2026 Q1-Q2</div>
                     <div class="roadmap-content">
-                        <h3>Commercial Operations</h3>
+                        <h3>Expansion Phase</h3>
                         <ul>
                             <li>Mine commercial transaction or development</li>
                             <li>Begin revenue distribution</li>
-                            <li>Project expansion planning</li>
+                            <li>Consider expansion to more mines</li>
+                            <li>Upgrade token economic model</li>
                         </ul>
                     </div>
                 </div>
@@ -337,12 +508,76 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Metallix (MTX). All Rights Reserved.</p>
+                <p>&copy; 2024 Metallix (MTX). All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- License Modal -->
+    <div id="licenseModal" class="license-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="licenseModalImg">
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+    <script>
+        // License Modal Functionality
+        const licenseImage = document.querySelector('.license-image');
+        const licenseModal = document.getElementById('licenseModal');
+        const modalImg = document.getElementById('licenseModalImg');
+        const closeModal = document.querySelector('.close-modal');
+        
+        licenseImage.addEventListener('click', function() {
+            licenseModal.style.display = "flex";
+            modalImg.src = document.querySelector('.license-img').src;
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+        
+        closeModal.addEventListener('click', function() {
+            licenseModal.style.display = "none";
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+        
+        // Close modal when clicking outside the image
+        licenseModal.addEventListener('click', function(event) {
+            if (event.target === licenseModal) {
+                licenseModal.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Update token distribution chart with correct values
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof Chart !== 'undefined' && document.getElementById('distributionChart')) {
+                const ctx = document.getElementById('distributionChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Development Team', 'Market Circulation', 'Community & Incentives', 'Marketing Operations', 'Mining Reserve'],
+                        datasets: [{
+                            data: [30, 30, 20, 15, 5],
+                            backgroundColor: [
+                                '#3498db', // Team
+                                '#2ecc71', // Market
+                                '#9b59b6', // Community
+                                '#e74c3c', // Marketing
+                                '#f1c40f'  // Reserve
+                            ],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
