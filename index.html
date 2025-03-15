@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallix (MTX) - The Future of Zambian Mining Investment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Metallix Logo">
+                <h1>Metallix <span>(MTX)</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#whitepaper">Whitepaper</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Unlocking Zambia's Mining Potential</h1>
+                <p>Metallix (MTX) is a Solana-based token offering holders a stake in the future outcomes of Wushuang Mining Company's exploration efforts</p>
+                <div class="cta-buttons">
+                    <a href="#whitepaper" class="btn primary">View Whitepaper</a>
+                    <a href="#tokenomics" class="btn secondary">Tokenomics</a>
+                    <a href="https://www.okx.com/zh-hans/web3/detail/501/BwfZKE1gBLgvarey8iKJ36TKu2pmqNYHcBx2ypZAu5Ht" class="btn trade" target="_blank">Trade Now <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Metallix</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Metallix (MTX) is an innovative blockchain project that combines Zambia's rich mineral resources with modern blockchain technology. Our token provides holders with the opportunity to participate in Wushuang Mining Company's exploration outcomes, allowing investors to share in the benefits of Zambian mining development.</p>
+                    <p>MTX token holders will be entitled to a share of the commercial transaction proceeds from Wushuang Mining Company's mining operations for the next three years, following the completion of the exploration report. Whether the mine is sold directly or commercially developed, the company will distribute 20% of the total revenue as dividends to token holders.</p>
+                </div>
+                <div class="about-image">
+                    <img src="mining.jpg" alt="Mining Site Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="project">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Overview</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="project-content">
+                <div class="project-item">
+                    <div class="icon"><i class="fas fa-mountain"></i></div>
+                    <h3>Zambian Mining Background</h3>
+                    <p>Zambia is a significant mineral resource country in Africa, rich in copper, cobalt, zinc, lead, and other non-ferrous metals. As an important part of the "Copperbelt," Zambia has a long mining history and is Africa's second-largest copper producer. In recent years, with the increasing global demand for non-ferrous metals, Zambia's mining industry has shown tremendous growth potential.</p>
+                </div>
+                <div class="project-item">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Market Outlook</h3>
+                    <p>With the rapid development of global electric vehicles, renewable energy, and electronics markets, the demand for copper, cobalt, and other non-ferrous metals continues to grow. As an important mineral resource country, Zambia's mining investment value is increasingly prominent. Wushuang Mining Company has obtained multiple mining licenses and has enormous development potential.</p>
+                </div>
+                <div class="project-item">
+                    <div class="icon"><i class="fas fa-coins"></i></div>
+                    <h3>Investment Opportunity</h3>
+                    <p>By holding MTX tokens, investors can participate in the early stages of Zambian mining development and share in future mining development returns. We plan to complete the exploration funding within 12 months, complete the mine exploration within 6 months after funding, and then proceed with commercial operations over the next 6-12 months.</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <h3>Mine Location</h3>
+                <div class="map-placeholder">
+                    <!-- Mine location map will be placed here -->
+                    <img src="map-placeholder.jpg" alt="Mine Location Map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tokenomics</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="tokenomics-content">
+                <div class="token-info">
+                    <div class="token-detail">
+                        <h3>Token Name</h3>
+                        <p>Metallix</p>
+                    </div>
+                    <div class="token-detail">
+                        <h3>Token Symbol</h3>
+                        <p>MTX</p>
+                    </div>
+                    <div class="token-detail">
+                        <h3>Blockchain</h3>
+                        <p>Solana</p>
+                    </div>
+                    <div class="token-detail">
+                        <h3>Total Supply</h3>
+                        <p>10,000,000 MTX</p>
+                    </div>
+                    <div class="token-detail">
+                        <h3>Contract Address</h3>
+                        <p class="contract-address">BwfZKE1gBLgvarey8iKJ36TKu2pmqNYHcBx2ypZAu5Ht</p>
+                    </div>
+                </div>
+                <div class="token-distribution">
+                    <h3>Token Distribution</h3>
+                    <div class="distribution-chart">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                    <div class="distribution-details">
+                        <div class="distribution-item">
+                            <span class="color-box team" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
+                            <p>Development Team: 30% (3,000,000 MTX)</p>
+                        </div>
+                        <div class="distribution-item">
+                            <span class="color-box market" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
+                            <p>Market Circulation: 30% (3,000,000 MTX)</p>
+                        </div>
+                        <div class="distribution-item">
+                            <span class="color-box community" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
+                            <p>Community & Incentives: 20% (2,000,000 MTX)</p>
+                        </div>
+                        <div class="distribution-item">
+                            <span class="color-box marketing" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
+                            <p>Marketing Operations: 15% (1,500,000 MTX)</p>
+                        </div>
+                        <div class="distribution-item">
+                            <span class="color-box reserve" style="display:inline-block; width:20px; height:20px; min-width:20px; min-height:20px; max-width:20px; max-height:20px; padding:0; border-radius:4px;"></span>
+                            <p>Mining Reserve: 5% (500,000 MTX)</p>
+                        </div>
+                    </div>
+                    <div class="token-trade">
+                        <a href="https://www.okx.com/zh-hans/web3/detail/501/BwfZKE1gBLgvarey8iKJ36TKu2pmqNYHcBx2ypZAu5Ht" class="btn trade" target="_blank">Trade MTX on OKX <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Team</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>James Tsing</h3>
+                    <p class="position">Chief Executive Officer (CEO)</p>
+                    <p class="description">Experienced mining executive with leadership roles in international mining companies and deep knowledge of Zambian markets. 15+ years in African resource exploration and mining operations, specializing in copper and cobalt mining.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Chris Rowley</h3>
+                    <p class="position">Chief Technology Officer (CTO)</p>
+                    <p class="description">Blockchain expert with extensive experience in smart contract development and project management. Responsible for MTX token implementation and security, with contributions to multiple successful projects on Solana and Ethereum.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Feng Meng</h3>
+                    <p class="position">Chief Operating Officer (COO)</p>
+                    <p class="description">Strategic operations and marketing professional responsible for MTX token economic design and community strategy. Expertise in Asian markets with extensive connections in both mining and cryptocurrency industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Roadmap</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item">
+                    <div class="roadmap-date">2025 Q2</div>
+                    <div class="roadmap-content">
+                        <h3>Project Launch</h3>
+                        <ul>
+                            <li>Project concept design</li>
+                            <li>Team formation</li>
+                            <li>Acquisition of mining licenses</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-date">2025 Q3</div>
+                    <div class="roadmap-content">
+                        <h3>Token Issuance</h3>
+                        <ul>
+                            <li>MTX token creation</li>
+                            <li>Official website launch</li>
+                            <li>Whitepaper release</li>
+                            <li>Community building</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-date">2025 Q4</div>
+                    <div class="roadmap-content">
+                        <h3>Fundraising</h3>
+                        <ul>
+                            <li>Token presale</li>
+                            <li>Listing on decentralized exchanges</li>
+                            <li>Begin mine exploration preparations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-date">2026 Q1</div>
+                    <div class="roadmap-content">
+                        <h3>Mine Exploration</h3>
+                        <ul>
+                            <li>Complete mine exploration</li>
+                            <li>Release exploration report</li>
+                            <li>Develop commercial development plan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-date">2026 Q2-Q3</div>
+                    <div class="roadmap-content">
+                        <h3>Commercial Operations</h3>
+                        <ul>
+                            <li>Mine commercial transaction or development</li>
+                            <li>Begin revenue distribution</li>
+                            <li>Project expansion planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="whitepaper" class="whitepaper">
+        <div class="container">
+            <div class="section-header">
+                <h2>Whitepaper</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="whitepaper-content">
+                <p>Learn detailed information about the Metallix (MTX) project, including technical implementation, token economic model, team background, and development plans.</p>
+                <a href="whitepaper.md" class="btn primary">View Whitepaper</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>info@zmetallix.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Office Address</h3>
+                        <p>123 Business District, Lusaka, Zambia</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-globe"></i></div>
+                        <h3>Official Website</h3>
+                        <p>https://zmetallix.com</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://x.com/zmetallix_mtx" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Metallix Logo">
+                    <h2>Metallix <span>(MTX)</span></h2>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#tokenomics">Tokenomics</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#whitepaper">Whitepaper</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Metallix (MTX). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
